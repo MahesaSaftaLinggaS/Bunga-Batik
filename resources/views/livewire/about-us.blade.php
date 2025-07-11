@@ -72,6 +72,8 @@
               </h3>
               <p class="mt-1 text-gray-600 dark:text-neutral-400">
               Tiktok @bungaa.batik
+              </p>
+              <p class="mt-1 text-gray-600 dark:text-neutral-400">
               Instagram @bungaa.batik
               </p>
             </div>

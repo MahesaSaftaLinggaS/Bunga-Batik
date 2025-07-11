@@ -26,11 +26,15 @@
             <a href="/admin/dashboard" class="rounded-md bg-gray-600 px-5 py-2.5 text-sm font-medium text-gray-200 hover:bg-gray-700 transition mr-2">
               Admin Dashboard
             </a>
-            <a href="/auth/logout" class="hover:text-red-700 transition">
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="..." />
-              </svg>
-            </a>
+            <form method="POST" action="/auth/logout" class="inline">
+              @csrf
+              <button type="submit" class="hover:text-red-700 transition flex items-center">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2h4a2 2 0 012 2v1"></path>
+                </svg>
+                <span class="ml-1">Logout</span>
+              </button>
+            </form>
           @else
             <a href="/auth/login" class="rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-700 transition">
               Login

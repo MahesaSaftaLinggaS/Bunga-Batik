@@ -18,7 +18,7 @@ use App\Livewire\UserProfile;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('/product/{product_id}/details',ProductDetails::class);
 
